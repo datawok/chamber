@@ -9,5 +9,5 @@ COPY --from=chamber /go/bin/chamber /usr/local/bin/
 
 # other code
 
-ENTRYPOINT ["chamber", "exec", "staging/structure-api", "--", "startMyAppScript" ]
+ENTRYPOINT ["chamber", "exec", "{env}/{service-name}", "--", "startMyAppScript" ]
 ```
