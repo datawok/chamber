@@ -1,6 +1,12 @@
 # Datawok Chamber Docker Image
 
-## Usage
+## Configuration
+
+```sh
+CHAMBER_KMS_KEY_ALIAS=datawok/{env}/ssm chamber import {env}/{service-name} {env}/{service-name}.json
+```
+
+## Dcokerfile
 
 ```Dockerfile
 FROM datawok/chamber as chamber
